@@ -33,8 +33,8 @@ En este caso voy a capturar el body de la alerta. Sigo los pasos anteriores con 
 - Name: body
 - Type: Object
 - Value: body
-
-Como se ve en la ![imagen](./images/var3.jpg)  
+  
+Como se ve en la imagen ![imagen](./images/var3.jpg)  
 
 
 ### Inicializo las variables. (Metodo dos)
