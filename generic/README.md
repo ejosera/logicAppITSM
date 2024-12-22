@@ -8,7 +8,8 @@ Dejo el código para una de tipo pay as you go
 ## Creo en el portal el código que tendrá la logic app
 
 ### En logic app designer creo un trigger de tipo When a HTTP request is received
-En Request Body JSON Schema pongo el esquema del json de la alerta que vamos a recivir. En este caso cojo [Azure monitor common alert schema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-common-schema) como se ve en la imagen\
+En Request Body JSON Schema pongo el esquema del json de la alerta que vamos a recivir. En este caso cojo [Azure monitor common alert schema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-common-schema) como se ve en la imagen
+<br />
 ![trigger](./images/trigger.jpg) 
 
 ### Inicializo las variables. (Metodo uno)
