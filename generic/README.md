@@ -103,8 +103,11 @@ Ejecutamos la logic App
 Utilizo un json formatter para ver el ![resultado](./images/resultado.jpg)
 
 ## añadir el código de la logic app al terraform
-voy a [Logic App code view](./images/codeView.jpg) y cogo el código de parameters y definition y lo pongo en el código
-
+voy a Logic app code view y colo el código de parameters y definition y lo pongo en el código
+  
+  ![Logic App code view](./images/codeView.jpg)
+  
+```  
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -394,36 +397,6 @@ Añadimos en el bloque de definition y paramaters lo que tenemos en la logic app
     "outputs": {
      }
 }
-
+``` 
+  
 y lo guardo como workflow.json
-
-# subscripcion 
-Visual Studio Enterprise    4abab78e-cc44-4dc6-b6c0-35280c169a76
-
-
-
-# Azure monitor: ejemplos de payload
-    https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-payload-samples
-
-# json viewer
-    https://jsonlint.com/
-
-# Integrar Azure monitor y logic app
-    https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-logic-apps?tabs=send-email
-
-# tohas
-https://thomasthornton.cloud/2024/10/17/automating-logic-app-deployments-from-designer-to-terraform/
-
-# Alert types
-- Activity log alert
-- Availability test alert
-- Cost budget alert
-- Forcasted budget alert
-- Log alert V1 - Metric measuremenet
-- Log alert v1 - Number of results
-- log alert V2
-- Metric alert - Dynamic threshold
-- Metric alert - Static threshold
-- Resource health alert
-- Service health alert
-- Smart alert
