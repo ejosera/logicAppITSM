@@ -50,10 +50,10 @@ En este paso vamos a mandar la información a la herramienta de ITSM. Para ello 
 
 Rellenamos
 - Uri: la dirección de escucha de la herramienta de ITSM. En nuesto caso vamos a enviar un json
-
-Method: Post
-Headers: Content-Type = Application/json
-Body: 
+- Method: Post
+- Headers: Content-Type = Application/json
+- Body: 
+```
 {
   "context": {
     "condition": {
@@ -84,6 +84,7 @@ Body:
   },
   "status": @{body('Parse_JSON')?['data']?['essentials']?['monitorCondition']}
 }
+``` 
 
 Como se ve en la imagen ![trigger](./images/post.jpg)
 
