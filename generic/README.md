@@ -41,7 +41,9 @@ Como se ve en la imagen ![imagen](./images/var3.jpg)
 Añado un paso para parsear el json y coger las variables
 
 Añado el paso Parse JSON
-En content en el trueno seleeciono getCommonSchema ![getCommonSchema](./images/getCommonSchema.jpg) y en schema el [Azure monitor common alert schema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-common-schema) como se ve en ![getCommonSchemaFilled](./images/getCommonSchemaFilled.jpg)
+En content en el trueno seleciono getCommonSchema ![getCommonSchema](./images/getCommonSchema.jpg)  
+
+y en schema pongo el [Azure monitor common alert schema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-common-schema) como se ve en ![getCommonSchemaFilled](./images/getCommonSchemaFilled.jpg)  
 
 ### Añado una acción de HTTP
 En este paso vamos a mandar la información a la herramienta de ITSM. Para ello necesitamos saber en que formato espera esta herramienta la información
