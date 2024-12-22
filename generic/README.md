@@ -14,24 +14,25 @@ En Request Body JSON Schema pongo el esquema del json de la alerta que vamos a r
 
 ### Inicializo las variables. (Metodo uno)
 Has 2 formas de inicializar las variables. Esta forma consiste en añadir un paso para inicializar por cada variable como vamos necesitar. En este caso solo inicializaré  par de ellas.
-Añado un paso para inicializar una variable. 
+
+#### Añado un paso para inicializar una variable. 
 
 El código se obtiene de json que vamos a recibir. En este caso quiereo que mi variable sea el nombre del recurso que en el [Azure monitor common alert schema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-common-schema) que está en en data->essentials->alertTargetIDs
 
 Como solo quiero el nombre del recurso, con la función split separo por '/' y me quedo con el último elmento
 
 Por lo que la configuración de este paso es:
-Name: AffectedResource
-Type: Array
-Value: @{split(triggerBody()?['data']?['essentials']?['alertTargetIDs'] [0], '/')}
+- Name: AffectedResource
+- Type: Array
+- Value: @{split(triggerBody()?['data']?['essentials']?['alertTargetIDs'] [0], '/')}
 
 Como se ve en la imagen ![trigger](./images/var1.jpg)
 
 ### Añado otro paso como ejemplo
 En este caso voy a capturar el body de la alerta. Sigo los pasos anteriores con los datos
-Name: body
-Type: Object
-Value: body
+- Name: body
+- Type: Object
+- Value: body
 
 Como se ve en la imagen ![trigger](./images/var2.jpg) y ![alt text](var3.png)
 
@@ -46,7 +47,7 @@ En content en el trueno seleeciono getCommonSchema ![getCommonSchema](./images/g
 En este paso vamos a mandar la información a la herramienta de ITSM. Para ello necesitamos saber en que formato espera esta herramienta la información
 
 Rellenamos
-Uri: la dirección de escucha de la herramienta de ITSM. En nuesto caso vamos a enviar un json
+- Uri: la dirección de escucha de la herramienta de ITSM. En nuesto caso vamos a enviar un json
 
 Method: Post
 Headers: Content-Type = Application/json
