@@ -85,13 +85,18 @@ Rellenamos
   "status": @{body('Parse_JSON')?['data']?['essentials']?['monitorCondition']}
 }
 ``` 
-
+  
+    
 Como se ve en la imagen ![trigger](./images/post.jpg)
 
 ## (Opcional) Probamos que todo va bien
-Si tenemos un servidor de REST APIs podemos comprobar si estamos recibiendo la información correcta
+Si tenemos un servidor de REST APIs podemos comprobar si estamos recibiendo la información correcta  
 
-Ejecutamos la logic App ![run](./images/runBabyRun.jpg) y añadimos un ejemplo de alerta [commonSchema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-payload-samples)
+Ejecutamos la logic App  
+ ![run](./images/runBabyRun.jpg)  
+ 
+  
+ y añadimos un ejemplo de alerta [commonSchema](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-payload-samples)
 
 ![run](./images/runBabyRun2.jpg)
 
