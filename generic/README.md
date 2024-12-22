@@ -143,9 +143,11 @@ voy a Logic app code view y colo el código de parameters y definition y lo pong
     "outputs": {
      }
 }
+``` 
+  
 
-Añadimos en el bloque de definition y paramaters lo que tenemos en la logic app quedando
-
+Añadimos en el bloque de **definition** y **paramaters** lo que tenemos en la logic app quedando
+```  
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
